@@ -1,0 +1,27 @@
+# /Users/adriancaroll/.config/tmuxinator/g2i.yml
+
+name: g2i
+root: ~/workspace/github/g2i
+
+windows:
+  - editor:
+      layout: d1e4,270x59,0,0{135x59,0,0[135x29,0,0,0,135x29,0,30,3],134x59,136,0[134x29,136,0,1,134x29,136,30,3]}]
+      panes:
+        - cd pace/
+        - cd platform-v2/
+        - cd auth/
+        - cd lambda/
+  - hasura:
+      - cd pace/infra/migrations/
+      - nvm use v16.0.0
+      - hasura console
+  - auth:
+      - cd auth/
+      - npx kill-port 6211
+      - yarn start
+  - pace:
+      - cd pace/
+      - yarn start
+  - platform:
+      - cd platform-v2/
+      - yarn start
