@@ -28,3 +28,6 @@ windows:
   - lambda:
       - cd lambda/
       - yarn dev
+  - g2i-website:
+      - cd g2i-website/
+      - yarn start
