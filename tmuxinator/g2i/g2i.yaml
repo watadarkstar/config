@@ -25,3 +25,6 @@ windows:
   - platform:
       - cd platform-v2/
       - yarn start
+  - lambda:
+      - cd lambda/
+      - yarn dev
