@@ -12,22 +12,28 @@ windows:
         - cd auth/
         - cd lambda/
   - hasura:
+      # Runs on port 9695
       - cd pace/infra/migrations/
       - nvm use v16.0.0
       - hasura console
   - auth:
+      # Runs on port 6211
       - cd auth/
       - npx kill-port 6211
       - yarn start
   - pace:
+      # Runs on port 3000
       - cd pace/
       - yarn start
   - platform:
+      # Runs on port 3001
       - cd platform-v2/
       - yarn start
   - lambda:
+      # Runs on port 9000
       - cd lambda/
       - yarn dev
   - g2i-website:
+      # Runs on port 8000
       - cd g2i-website/
       - yarn start
