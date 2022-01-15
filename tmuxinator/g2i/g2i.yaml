@@ -32,6 +32,7 @@ windows:
   - lambda:
       # Runs on port 9000
       - cd lambda/
+      - npx kill-port 9000
       - yarn dev
   - g2i-website:
       # Runs on port 8000
