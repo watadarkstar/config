@@ -11,30 +11,30 @@ windows:
         - cd platform-v2/
         - cd auth/
         - cd lambda/
-  - hasura:
+  - hasura9695:
       # Runs on port 9695
       - cd pace/infra/migrations/
       - nvm use v16.0.0
       - hasura console
-  - auth:
+  - auth6211:
       # Runs on port 6211
       - cd auth/
       - npx kill-port 6211
       - yarn start
-  - pace:
+  - pace3000:
       # Runs on port 3000
       - cd pace/
       - yarn start
-  - platform:
+  - platform3001:
       # Runs on port 3001
       - cd platform-v2/
       - yarn start
-  - lambda:
-      # Runs on port 9000
+  - lambda8888:
+      # Runs on port 8888
       - cd lambda/
-      - npx kill-port 9000
-      - yarn dev
-  - g2i-website:
+      - nvm use v16.0.0
+      - netlify dev
+  - g2i-website8000:
       # Runs on port 8000
       - cd g2i-website/
       - yarn start
