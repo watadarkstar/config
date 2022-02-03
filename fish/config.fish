@@ -14,7 +14,13 @@ alias gup='git pull --rebase'
 alias gp='git push'
 alias gd='git diff'
 alias ga='git add'
+alias gaa='git add --all'
 alias gcm='git checkout master'
+alias gc='git commit -v'
+
+# Git Commit Citizen
+echo "Git Commit Citizen Aliases imported: https://github.com/commitizen/cz-cli#using-the-command-line-tool"
+alias gz='npx cz'
 
 # Netlify Aliases
 echo "Netlify Aliases imported"
