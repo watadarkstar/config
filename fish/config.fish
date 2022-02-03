@@ -16,5 +16,6 @@ alias gd='git diff'
 alias ga='git add'
 alias gcm='git checkout master'
 
+# Netlify Aliases
 echo "Netlify Aliases imported"
 alias nwatch='netlify watch && say "done mr. adrian"'
