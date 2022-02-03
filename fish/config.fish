@@ -3,7 +3,7 @@ bass source ~/.bash_profile
 
 # Git Aliases
 # migrating from https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh
-echo "Git Aliases imported: https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh"
+echo "Git Aliases imported: https://github.com/watadarkstar/config/blob/main/fish/config.fish"
 alias g='git'
 alias gs='git status'
 alias gst='git status'
