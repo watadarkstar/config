@@ -1,0 +1,14 @@
+# /Users/adriancaroll/.config/tmuxinator/lig.yml
+
+name: lig
+root: ~/workspace/github/ligonier
+
+windows:
+  - editor:
+      layout: even-horizontal
+      panes:
+        - cd ligonier-app/
+        - cd ligonier-app/
+  - rn-server8081:
+      - cd ligonier-app/
+      - yarn start -c
