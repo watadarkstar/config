@@ -19,6 +19,11 @@ alias gaa='git add --all'
 alias gcm='git checkout master'
 alias gc='git commit -v'
 
+git config --global alias.co checkout
+git config --global alias.s status
+git config --global alias.a add
+git config --global alias.pl pull
+
 # Git Commit Citizen
 echo "Git Commit Citizen Aliases imported: https://github.com/commitizen/cz-cli#using-the-command-line-tool"
 alias gz='npx cz'
