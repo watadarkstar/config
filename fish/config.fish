@@ -18,7 +18,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gcm='git checkout master'
 alias gc='git commit -v'
-alias trigger-ci='git commit --allow-empty --allow-empty-message -m "" && git push'
+alias trigger-ci='git commit --allow-empty -m "chore: trigger CI" && git push'
 
 git config --global alias.co checkout
 git config --global alias.s status
